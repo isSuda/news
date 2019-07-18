@@ -1,0 +1,27 @@
+// 配置文件
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        // 设置浏览器的 polyfill 默认是false
+        "useBuiltIns": "usage",
+        // core-js@3 -S
+        "corejs": 3,
+        "modules": false
+      }
+    ]
+  ],
+  "plugins":[
+    "@babel/plugin-transform-runtime",
+    [
+      "component",
+      {
+        "libraryName": "element-ui",
+        "styleLibraryName": "theme-chalk"
+      }
+    ]
+  ]
+}
+
+
